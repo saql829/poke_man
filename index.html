@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <!-- <script>
+        fetch("https://pokeapi.co/api/v2/pokemon/")
+        .then(response => response.json())
+        .then(data => console.log(data.weight))
+        .catch(error => console.error(error));
+        
+    </script> -->
+
+    <h1>Pokemon Finder</h1>
+    <input type="text" id="pokemonName" placeholder="Enter Pokemon name">
+    <button onclick="fetchData()">Fetch Pokemon</button>
+    <img id="pokemonSprite" style="display: none;" alt="Pokémon Sprite">
+    <div id="pokemonDetails" style="display: none; margin-top: 20px;">
+        <h3>Pokemon Details:</h3>
+        <p id="name"></p>
+        <p id="height"></p>
+        <p id="weight"></p>
+        <p id="type"></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
